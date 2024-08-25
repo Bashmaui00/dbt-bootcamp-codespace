@@ -1,3 +1,9 @@
+{{
+  config(
+    materialized = 'view'
+    )
+}}
+
 with src_listings AS (
     select * from {{ ref("src_listings") }}
 )
